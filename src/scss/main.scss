@@ -164,6 +164,7 @@
   }
 
   &__logo img {
+    margin: 0 1rem;
     margin-right: 2rem;
     height: 0.75rem;
     width: auto;
@@ -198,7 +199,7 @@
     transform: scale(1.4);
     position: relative;
     top: 0.125rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
 
     &--open { display: block; }
     &--close { display: none; }
@@ -247,6 +248,7 @@
   top: 0;
   background: #fff;
   border-bottom: 0.08rem solid #dedede;
+  z-index: index($layers, sticky);
 }
 
 .header-cover {

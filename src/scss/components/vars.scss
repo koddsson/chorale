@@ -2,8 +2,8 @@ $default-bg: #fff;            // in dark theme: 202020
 $regular-text-color: #292929; // in dark theme: #ccc
 $bold-text-color: #000;       // in dark theme: #fff
 
-$brand-main: #8728CC;         // variant: #AF3FFF
-$brand-secondary: #2861CC;
+$brand-main: #BA1D1D;         // variant: #AF3FFF
+$brand-secondary: #E55619;
 
 // brighter versions
 //$brand-main: #DB1C1C; // E84D00
@@ -19,4 +19,4 @@ $brand-boring-blue: #3A86FF;
 $brand-blurple: #4328CC;
 $brand-pink: #FF006E;
 
-$layers: root, navroot, navlist, navtop, modal;
+$layers: root, sticky, navroot, navlist, navtop, modal;
