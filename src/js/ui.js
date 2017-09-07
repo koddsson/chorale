@@ -1,3 +1,3 @@
-document.querySelector('.nav-bar__icon').addEventListener('click', function () {
-  document.querySelector('.nav-bar').classList.toggle('nav-bar--active-on-mobile')
+document.querySelector('.nav-mobile__menu').addEventListener('click', function () {
+  document.querySelector('.nav-mobile').classList.toggle('nav-mobile--active')
 })

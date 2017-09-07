@@ -17,7 +17,7 @@ svg {
   height: 1rem;
   width: 1rem;
   position: relative;
-  top: 0.125rem;
+  top: 0.15rem;
 
   path, g { fill: $regular-text-color; }
 }
@@ -32,6 +32,11 @@ a {
 
   &:hover { color: $bold-text-color; }
   &:active { opacity: 0.8; }
+}
+
+a.silent {
+  color: $bold-text-color;
+  &:hover { color: $brand-main; }
 }
 
 ::selection {

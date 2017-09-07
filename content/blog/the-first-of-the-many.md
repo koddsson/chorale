@@ -1,8 +1,8 @@
 +++
-title = "Meet the man that published on Chorale before anyone else"
-description = "Your guess is wrong, it’s MESA not Kesha"
-leadup = "Who came first? That’s what no one asked, but secretly wondered around once. MESA (or MESA World) is the first artist to join the Chorale creator platform."
+title = "Meet the first artist to join Chorale"
+description = "Who came first? That’s what no one asked, but secretly wondered around once. And no, your guess is wrong, it’s MESA not Kesha! MESA (or MESA World) is the first artist to join the Chorale creator platform."
 image = "/article-img/some-guy.jpg"
+comments = "https://www.reddit.com/r/choraleapp/comments/6yp6xd/mesa_is_the_first_artist_to_join_chorale/"
 type = "post"
 date = "2017-08-24"
 darken = ".4"

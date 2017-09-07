@@ -2,7 +2,9 @@
 
 [![Join Discord](https://img.shields.io/discord/330694680318574592.svg?style=flat-square)](https://discord.gg/BUbfvsM)
 [![Website Status](https://img.shields.io/website-up-down-green-red/https/www.choraleapp.com.svg?label=status&style=flat-square)](https://www.choraleapp.com)
-[![Twitter< Follow](https://img.shields.io/twitter/follow/choraleapp.svg?style=social&label=follow)](https://twitter.com/choraleapp)
+[![Twitter Follow](https://img.shields.io/twitter/follow/choraleapp.svg?style=social&label=follow)](https://twitter.com/choraleapp)
+[![Codacy Grade](https://img.shields.io/codacy/grade/6b6c56008b8f4518aa074da6fa16f016.svg?style=flat-square)](https://www.codacy.com/app/git_19/chorale?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=choraleapp/chorale&amp;utm_campaign=Badge_Grade)
+[![Codacy Coverage](https://img.shields.io/codacy/coverage/6b6c56008b8f4518aa074da6fa16f016.svg?style=flat-square)](https://www.codacy.com/app/git_19/chorale?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=choraleapp/chorale)
 
 The source code you see here is being deployed to [www.choraleapp.com](https://www.choraleapp.com)
 with the help of Hugo, Netlify, and Gulp.
@@ -11,14 +13,14 @@ with the help of Hugo, Netlify, and Gulp.
 
 To build the CSS & JS, enter `gulp`. To preview the site, enter `hugo serve`.
 
-# Contribute
+## Contribute
 
 Feel free to open an issue for any bug, feature, or request. If you want to make
 a PR, make sure the change has been discussed or else your PR will get rejected.
 
-# License
+## License
 
-Copyright 2017 Chorale, Mantas Vilčinskas
+Copyright 2017 Chorale Contributors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

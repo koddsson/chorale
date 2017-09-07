@@ -2,7 +2,7 @@
 <body class="default">
 {{ partial "nav.html" . }}
 <section class="basic-section">
-  <div class="container">
+  <div class="container container--narrow">
     <h1 class="h1 bold center"><b>Newsroom</b></h1>
   <p class="center faded">{{ len (where .Site.Pages "Type" "post") }} articles, newest to oldest</p>
     <div class="break"></div>

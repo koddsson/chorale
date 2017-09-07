@@ -1,49 +1,63 @@
 {{ partial "meta.html" . }}
 <body class="index">
-{{ partial "nav.html" . }}
+{{ partial "nav-light.html" . }}
 <!-- Content -->
-<main class="hero hero--light">
+<main class="hero background" style="background-image: linear-gradient(135deg, rgba(0,0,0,1), rgba(0,0,0,0.0)), url(/img/guitarist.jpeg)"> <!--  -->
   <div class="container">
   <div class="row">
   <!---->
-  <div class="col-half">
+  <div class="col">
     <h1 class="h1">
-      <b>Meet Chorale, your new favorite music app.
-         It’s made for everyone, by everyone.</b>
+      <b>Chorale is a competition-killing music app made for everyone, by everyone.</b>
     </h1>
-    <p>Spotify, Google, and SoundCloud don’t listen to you. But we do. Chorale
-       is the first-ever music streaming platform that caters to users and not greedy corporations.</p>
+    <p>Spotify, Google, and SoundCloud don’t listen to you. So why not fix that? Unsubscribe from Spotify and uninstall SoundCloud, because Chorale
+       is the first-ever music streaming platform that caters to users and not greedy executives.</p>
 
     <div class="break break--half"></div>
     <div class="btn-group">
-      <a href="/early-access" class="btn btn--primary">Give me access</a>
+      <a href="/early-access" class="btn btn--primary">Gimme the app</a>
       <a href="/tour" class="btn btn--border">Tell me more</a>
     </div>
 
-    <p><small>
-      <a href="https://dribbble.com/shots/2863164-Anya-Hindmarch">animation art by Magnus Magnusson</a></small></p>
+    <!-- <p><small>
+      <a href="https://dribbble.com/shots/2863164-Anya-Hindmarch">animation art by Magnus Magnusson</a></small></p> -->
   </div>
-  <div class="col-half">
-    <img src="/img/home-anim.gif" class="stretch-img">
+  <div class="col">
+    <!-- White animation -->
+    <!-- <img src="/img/home-anim.gif" class="stretch-img"> -->
   </div>
   <!---->
   </div>
   </div>
 </main>
 
-<section class="basic-section">
-  <div class="container">
-    <div class="center">
-      <h1 class="h1 center">Chorale is still in development.</h1>
-      <p class="center">Development, design, and other stuff, all this takes time!<br>
-        This is why we have an alpha program so testers can try Chorale.</p>
-      <div class="break"></div>
+<section class="container">
+  <div class="break"></div><div class="break"></div><div class="break"></div>
+  <h1 class="h2 bold center"><b>Maybe some of these are relevant<span class="highlighted">.</span></b></h1>
+  <div class="break"></div>
 
-      <a href="/early-access" class="btn btn--primary">Request access</a>
-      <a href="/creators" class="btn btn--border">I’m a creator</a>
-      <p><small>we usually respond in a day or two</small></p>
-    </div>
+  <div class="row mobile-row text-row">
+    <figure class="col">
+      <h2 class="h5 bold"><mark>Sign up for Chorale</mark></h2>
+      <p>If you are 13 or older, and do not mind waiting less than 48 hours, then you
+      are eligible to sign up for Chorale! So go do it! It costs nothing to try something
+      new.</p>
+      <a href="/early-access">Gimme the app</a>
+    </figure>
+    <figure class="col">
+      <h2 class="h5 bold"><mark>Learn more about Chorale</mark></h2>
+      <p>Chorale is a revolutionary open source music and podcast app available for use on
+      any device with a modern web browser, including your phone.</p>
+      <a href="/tour">See product tour</a>
+    </figure>
+    <figure class="col">
+      <h2 class="h5 bold"><mark>Publish to Chorale</mark></h2>
+      <p>Artists are our #1 priority. We love you! Chorale gives artists the tools to
+      shape their profiles however they want and get even more listeners.</p>
+      <a href="/creators/">Visit Creator Center</a>
+    </figure>
   </div>
+  <div class="break"></div><div class="break"></div><div class="break"></div>
 </section>
 <!-- Content -->
 {{ partial "footer.html" . }}

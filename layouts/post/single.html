@@ -3,23 +3,44 @@
 {{ partial "nav-light.html" . }}
 <div class="hero" style="background-image: linear-gradient(135deg, rgba(0, 0, 0, 0{{ .Params.darken }}), rgba(0, 0, 0, 0{{ .Params.darken }})), url({{ .Params.image }})">
   <div class="hero-greeting__container center">
-      <!-- preview -->
+
   </div>
 </div>
-<section class="basic-section">
-  <div class="container container--narrow">
-    <h1 class="h1 bold "><b>{{ .Title }}</b></h1>
-    <h2 class="h3 bold no-upper-margin">{{ .Description }}</h2>
-    <div class="break break--half"></div>
 
-    <img src="https://image.crisp.chat/avatar/operator/cadc4207-3c89-4033-a436-8670701b7839/80/?avatar=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2Fcadc4207-3c89-4033-a436-8670701b7839%2Fb7361758-4256-46cf-90f4-435af9c066b0.jpg" style="border-radius: 50%; width: 3rem; height: 3rem; float: left; margin-right: 1rem">
-    <span class="bold">Mantas</span><br>
-    <small class="bold caps">a {{ .ReadingTime }} minute read posted on {{ .Date.Format "January 2, 2006" }}</small>
+<article class="container container--narrow">
+  <div class="break"></div><div class="break"></div>
+  <h1 class="h1 bold center"><b>{{ .Title }}</b></h1>
+  <p class="center ingrained">a {{ .ReadingTime }} min read by Mantas Vilčinskas on {{ .Date.Format "Jan 2, 2006" }}</p>
 
-    <div class="markdown-container">
-      <p class="h5">{{ .Params.leadup }}</p>
-      {{ .Content }}
-    </div>
+  <div class="break break--half"></div>
+  <p>{{ .Params.leadup }}</p>
+
+  <div class="markdown-container">
+    <p class="h5">{{ .Description }}</p>
+    {{ .Content }}
   </div>
-</section>
+</article>
+
+
+<hr class="fancy center">
+<div class="container container--narrow">
+  <h1 class="h1 bold center">Comments</h1>
+  <p class="center"><a href="{{ .Params.comments }}">Leave a comment</a><br>
+  <span class="faded">showing 50 of the top comments from Reddit</span></p>
+
+  <div class="break"></div>
+  <!-- Reddit mods -->
+  <style>
+  a[href="https://www.reddit.com/r/choraleapp/user/mistermantas"] {
+    color: forestgreen;
+  }
+
+  a[href="https://www.reddit.com/r/choraleapp/user/mistermantas"]::after {
+    content: ' [Chief Officer]';
+  }
+  </style>
+  <script src="{{ .Params.comments }}/.embed?limit=50&t=all"></script>
+</div>
+<div class="break"></div><div class="break"></div>
+
 {{ partial "footer.html" . }}
