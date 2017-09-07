@@ -1,7 +1,7 @@
 ---
 title: Wireless worries in the world of no headphone jacks
 description: It seems like after Apple ditched the headphone jack, everyone else is following suit. Google is rumored to ditch the 3.5mm jack on the upcoming Pixel 2, and the newly released Essential Phone has no jack either…
-date: 2017-09-03
+date: 2017-09-07
 image: /article-img/wireless-iphone.jpg
 darken: .125
 comments: https://www.reddit.com/r/choraleapp/comments/6ypbb5/wireless_worries_in_2017_megathread/
