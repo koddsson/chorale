@@ -4,6 +4,7 @@ description: It seems like after Apple ditched the headphone jack, everyone else
 date: 2017-09-03
 image: /article-img/wireless-iphone.jpg
 darken: .125
+comments: https://www.reddit.com/r/choraleapp/comments/6ypbb5/wireless_worries_in_2017_megathread/
 type: post
 ---
 
