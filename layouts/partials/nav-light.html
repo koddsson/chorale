@@ -9,7 +9,7 @@
 
       {{ partial "nav-items.html" . }}
 
-      <li class="nav-bar__cta"><a href="/early-access"><mark>Try Chorale</mark>
+      <li class="nav-bar__cta"><a href="https://the.choraleapp.com">Launch Chorale
         <svg viewBox="0 0 24 24">
           <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
         </svg>
@@ -21,7 +21,7 @@
 
 <nav class="nav-mobile nav-mobile--light">
   <a href="/#" class="nav-mobile__logo">
-    <svg viewBox="0 0 96 96"><g><rect x="23.6" y="14.3" width="10.5" height="67.4"></rect><rect x="42.8" y="6.8" width="10.5" height="82.4"></rect><rect x="61.9" y="24.8" width="10.5" height="46.4"></rect><rect x="81.2" y="32.3" width="10.5" height="31.5"></rect><rect x="4.3" y="32.3" width="10.5" height="31.5"></rect></g></svg>
+    <img src="/logo.png">
   </a>
 
   <svg class="nav-mobile__menu" viewBox="0 0 24 24">
@@ -31,21 +31,19 @@
 
   <div class="nav-mobile__list">
     <div class="container center">
+      <div class="break-sm"></div>
       <ul class="no-bullet">
         {{ partial "nav-items.html" . }}
       </ul>
+      <div class="break-sm"></div>
+    </div>
 
-      <div class="break"></div>
-
-      <p>
-        <a href="/early-access">
-          <mark class="h4 caps"><b>Try Chorale
-            <svg viewBox="0 0 24 24" class="nav-mobile__list-icon">
-              <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
-            </svg>
-          </b></mark>
-        </a>
-      </p>
+    <div class="faded-bg center">
+      <div class="break-sm"></div>
+      <a href="https://the.choraleapp.com" class="h4 btn btn--block">
+        <b>Login</b>
+      </a>
+      <div class="break-sm"></div>
     </div>
   </div>
 </nav>

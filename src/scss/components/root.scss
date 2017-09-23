@@ -8,9 +8,8 @@ html {
 }
 
 mark {
-  background: transparent;
-  color: inherit;
-  font-weight: 500;
+  background: $regular-text-color;
+  color: invert($bold-text-color);
 }
 
 svg {
@@ -22,11 +21,6 @@ svg {
   path, g { fill: $regular-text-color; }
 }
 
-img {
-  height: 50%;
-  width: 50%;
-}
-
 a {
   color: $brand-main;
 
@@ -34,12 +28,14 @@ a {
   &:active { opacity: 0.8; }
 }
 
-a.silent {
-  color: $bold-text-color;
-  &:hover { color: $brand-main; }
-}
-
 ::selection {
   background: #B4D5FF; // default on Macs probably
   color: #000;
 }
+
+img {
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+img[data-src] { opacity: 0; }

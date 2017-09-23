@@ -35,6 +35,19 @@
   h4 { font-size: 1.25rem; }
   h5 { font-size: 1.125rem; }
   h6 { font-size: 0.825rem; }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      &::before {
+        content: " · ";
+        padding: 0 0.5rem;
+      }
+    }
+  }
 }
 
 .btn {
@@ -46,6 +59,12 @@
   border: 0.1rem solid transparent;
   cursor: pointer;
   display: inline-block;
+  text-align: center;
+
+  // Different form
+  &--block {
+    width: 100%;
+  }
 
   // For SVGs
   &--primary, &--secondary { svg path { fill: #fff; } }
@@ -92,6 +111,15 @@
     }
   }
 
+  &--black {
+    background: #000;
+    color: #fff;
+
+    &:hover {
+      background: #292929;
+    }
+  }
+
   &--border {
     border-color: currentColor;
     color: $bold-text-color;
@@ -106,17 +134,15 @@
 .card {
   margin: 0 0.4rem;
   color: $regular-text-color;
-  border: 0.1rem solid $bold-text-color;
+  border: 0.1rem solid $border-color;
   border-radius: 0.25rem;
-  background: #fff;
+  background: $bold-bg;
 
   &__header {
-    border-bottom: 0.1rem solid $bold-text-color;
+    border-bottom: 0.1rem solid $border-color;
   }
 
   &__header, &__content { padding: 1.4rem 1rem; }
-
-  .btn { width: 100%; text-align: center; }
 }
 
 .card--primary {
@@ -164,7 +190,7 @@
 
   &__logo img {
     margin-left: 0;
-    height: 1.25rem;
+    height: 1.4rem;
     width: auto;
   }
 
@@ -198,32 +224,31 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
     z-index: index($layers, navroot);
     overflow-y: auto;
 
-    // Links
-    a { color: #000; }
-    svg path { fill: #000; }
-
     &.nav-mobile--light {
-      a { color: #fff; }
-      svg path, svg g { fill: #fff; }
+      svg path { fill: #fff; }
     }
 
-    // Icon defaults
-    svg {
+    // Menu specific
+    &__logo img {
       height: 1.4rem;
-      width: 1.4rem;
+      width: auto;
       display: inline-block;
       margin: 0.8rem;
-
-      path, g { fill: #000; }
     }
 
     // Menu specific
     &__menu {
       float: right;
+      height: 1.4rem;
+      width: 1.4rem;
+      display: inline-block;
+      margin: 0.8rem;
+      position: static;
+
+      path { fill: #000; }
       &--open { display: block; }
       &--close { display: none; }
     }
@@ -237,9 +262,6 @@
 
   // When menu is open
   .nav-mobile.nav-mobile--active {
-    background: $brand-main;
-    position: fixed;
-
     // Show [X] on menu
     .nav-mobile__menu {
       &--open { display: none; }
@@ -249,8 +271,22 @@
     // Show links
     .nav-mobile__list {
       display: block;
+      background: #fff;
+      box-shadow: $shadow1;
+      position: fixed;
+      width: calc(100% - 2rem);
+      top: 2rem;
+      margin: 1rem;
+      animation: fadeup 0.2s;
 
-      font-size: 2rem;
+      ul {
+        line-height: 1.8;
+        font-size: 1.6rem;
+      }
+
+      a {
+        color: #000;
+      }
     }
   }
 }
@@ -267,13 +303,17 @@
 // Old relic
 .header-cover {
   height: 3.5rem;
-  background: $regular-text-color;
+  background: mix($default-bg, $bold-text-color, 10%);
 }
-
 
 /**
  * Globals
  */
+
+.gradient-bg {
+  background: linear-gradient(180deg, #eee, $default-bg 8%)
+}
+
 
 .basic-section {
   padding: 6rem 0;
@@ -285,6 +325,16 @@
 
 .faded-bg { background: #efefef; }
 
+@keyframes faded {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeup {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .brand-section {
   padding: 6rem 0;
   color: #fff;
@@ -292,47 +342,92 @@
 }
 
 .footer-promo {
-  padding: 4rem 1rem;
-  background: $brand-main;
-  color: #fff;
+  padding: 2rem;
+  background: mix($default-bg, $bold-text-color, 10%);
+  color: invert($bold-text-color);
 
   .btn--primary { background: #fff; color: #000; }
   .btn--border { color: #fff; }
 }
 
-.footer {
-  padding: 8rem 1rem;
-  background: #292929;
-  color: #fff;
-
-  a {
-    color: #ccc;
-
-    &:hover { color: $brand-main; }
-  }
+.pre-footer {
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  background: mix($default-bg, $bold-text-color, 12%);
+  color: invert($bold-text-color);
+  line-height: 1.25;
 
   // HACK: https://github.com/sass/libsass/issues/151
   .sponsor {
     height: 2rem;
     width: auto;
-    margin: 0 1rem;
-    filter: #{ "grayscale()" } #{ "invert(0)" };
+    margin: 0.6rem 2rem;
+    filter: grayscale(1);
 
     &:hover { filter: none; }
   }
 
-  svg path { fill: #fff; }
+  @media (max-width: 768px) {
+    .pre-footer__sponsors a {
+      display: block;
+
+      .sponsor {
+        height: 1.8rem;
+        margin: 0.6rem;
+      }
+    }
+  }
+
+  .sponsor[alt="Netlify"] {
+    transform: scale(1.125);
+  }
+}
+
+.choices-on-right {
+  padding: 1.8rem 0;
+
+  .break-sm { display: none; }
+
+  @media (max-width: 768px) {
+    &__init, &__cta, .break-sm {
+      display: block;
+    }
+
+    .float-fix { position: static; }
+    .float-right { float: none; }
+  }
+}
+
+
+.footer {
+  background: mix($default-bg, $bold-text-color, 15%);
+  color: invert($bold-text-color);
+  padding: 2rem;
+
+  a {
+    color: invert($regular-text-color);
+
+    &:hover { color: $brand-main; }
+  }
+
+  &__icons svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.25rem;
+
+    &:hover path { fill: $brand-main; }
+  }
+
+  // Let links breathe
+  ul { line-height: 1.8; }
 
   &__logo {
-    position: relative;
-    top: 0.5rem;
+    width: 50%;
+    height: auto;
   }
-  &__logo {
-    height: 2rem;
-    width: 2rem;
 
-    g { fill: #fff; }
-  }
+  // For everything
+  svg path { fill: invert($bold-text-color); }
 }
 
 
@@ -429,6 +524,11 @@
  * Other
  */
 
+// Hide "Coded by Netlify"
+.callOut {
+  display: none;
+}
+
 .warning {
   padding: 2rem;
   background: $brand-yellow;
@@ -490,8 +590,8 @@
 
   // Every box (except headings)
   td {
-    border-bottom: 0.1rem solid #dedede;
-    border-top: 0.1rem solid #dedede;
+    border-bottom: 0.1rem solid $border-color;
+    border-top: 0.1rem solid $border-color;
   }
 
   // Give Chorale focus
@@ -546,9 +646,31 @@
 
 // on /community/
 .person {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   margin: 0.5rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+  box-shadow: $shadow1;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+  &:active {
+    transform: scale(1.125);
+  }
+}
+
+
+/**
+ * Page specific
+ */
+
+.index .hero {
+  color: #000;
+  background: #e5e5e5;
+
+  &__promo { color: #000; }
+  .btn--border { color: #000; }
 }

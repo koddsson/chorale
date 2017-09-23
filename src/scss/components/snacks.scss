@@ -15,12 +15,17 @@
   max-width: 36rem;
   cursor: pointer;
   opacity: 0;
+  box-shadow: $shadow1;
+  transition: opacity 0.2s;
+  cursor: pointer;
 
   &.active {
     height: auto;
     opacity: 1;
     margin-bottom: 1rem;
     height: auto;
+    transition: opacity 0.2s;
+    //animation: faded 0.2s;
 
     & span {
       padding: 1rem 1.5rem;
