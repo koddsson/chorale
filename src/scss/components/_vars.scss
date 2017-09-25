@@ -1,35 +1,32 @@
-$default-bg: #fff;            // in dark theme: 202020
-$regular-text-color: #292929; // in dark theme: #ccc
-$bold-text-color: #000;       // in dark theme: #fff
+// Main paint colors
+//
+// Used for most website elements
+$default-bg: #fff;
+$regular-text-color: #292929;
+$bold-text-color: #000;
 $border-color: #dedede;
 $bold-bg: #fff;
 
-/*
-$theme: black;
-
-$default-bg: #202020;            // in dark theme: 202020
-$regular-text-color: #ccc; // in dark theme: #ccc
-$bold-text-color: #fff;       // in dark theme: #fff
-$border-color: #343434;
-$bold-bg: #1a1a1a; */
-
-//$brand-main: #F23D4E;
-//$brand-secondary: #6c20a1; // darker: 6C20A0 AF3FFF
-
+// Brand colors
+//
+// Used commonly on the site
 $brand-main: #00ace5;
 $brand-secondary: #d81536;
+
+// Other colors
+//
+// Not checked to see if they fit the brand
 $brand-yellow: #ffbe0b;
+$brand-orange: #ff7f3f;
+$brand-red: #e51b1b;
+$brand-light-blue: #7ffff4;
+$brand-confident-blue: #2861cc;
+$brand-boring-blue: #3a86ff;
+$brand-blurple: #4328cc;
+$brand-pink: #ff006e;
 
-/*
-
-$brand-orange: #FF7F3F;
-$brand-red: #E51B1B;
-$brand-light-blue: #7FFFF4;
-$brand-confident-blue: #2861CC;
-$brand-boring-blue: #3A86FF;
-$brand-blurple: #4328CC;
-$brand-pink: #FF006E; */
-
+// Calculate z-index
 $layers: root, contentpush, sticky, navroot, navlist, navtop, modal;
 
+// Shadows
 $shadow1: 0 0.125rem 0.25rem rgba(#000, 0.2);

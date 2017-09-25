@@ -1,7 +1,9 @@
 <article class="article">
   <img src="https://image.crisp.chat/avatar/operator/cadc4207-3c89-4033-a436-8670701b7839/80/?avatar=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2Fcadc4207-3c89-4033-a436-8670701b7839%2Fb7361758-4256-46cf-90f4-435af9c066b0.jpg" class="article__author">
 
-  <img src="{{ .Params.image }}" class="article__image">
+  <a href="{{ .Permalink }}">
+    <img src="{{ .Params.image }}" class="article__image">
+  </a>
 
   <div class="article__details">
     <a href="{{ .Permalink }}"></a>

@@ -242,23 +242,6 @@ h1, h2, h3, h4, h5, h6 {
         flex: 0 0 50%; } }
 
 /*! What I Can't Live Without in CSS | MIT | github.com/mistermantas */
-/*
-$theme: black;
-
-$default-bg: #202020;            // in dark theme: 202020
-$regular-text-color: #ccc; // in dark theme: #ccc
-$bold-text-color: #fff;       // in dark theme: #fff
-$border-color: #343434;
-$bold-bg: #1a1a1a; */
-/*
-
-$brand-orange: #FF7F3F;
-$brand-red: #E51B1B;
-$brand-light-blue: #7FFFF4;
-$brand-confident-blue: #2861CC;
-$brand-boring-blue: #3A86FF;
-$brand-blurple: #4328CC;
-$brand-pink: #FF006E; */
 html {
   font-family: 'Rubik', sans-serif;
   background: #fff;
@@ -270,6 +253,10 @@ html {
 mark {
   background: #292929;
   color: white; }
+
+hr {
+  border: 0;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.125); }
 
 svg {
   height: 1rem;
@@ -339,7 +326,9 @@ img[data-src] {
   padding: 0 0.4rem; }
 
 .background {
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .stretch-img {
   width: 100%;
@@ -806,8 +795,7 @@ img[data-src] {
   display: table-cell;
   vertical-align: middle;
   width: 100vw;
-  background-color: #292929;
-  background-size: cover; }
+  background-color: #292929; }
   .hero a {
     color: #fff; }
   .hero .btn--primary {
@@ -904,11 +892,12 @@ img[data-src] {
     height: 2rem;
     width: 2rem; }
   .comparision-table th {
-    padding: 1rem;
-    padding-top: 1.5rem; }
+    padding: 1rem 1.4rem; }
     .comparision-table th img {
-      height: 1.5rem;
+      height: 1.4rem;
       width: auto; }
+    .comparision-table th.chorale {
+      padding-top: 1.5rem; }
   .comparision-table .feature {
     padding: 0.8rem;
     border-right-color: #00ace5; }
@@ -921,7 +910,7 @@ img[data-src] {
     border-color: #00ace5;
     border-left: 0.1rem solid #00ace5;
     border-right: 0.1rem solid #00ace5;
-    padding: 1rem 2.5rem; }
+    padding: 0.25rem 1.25rem; }
     .comparision-table td.chorale svg path {
       fill: #00ace5; }
   .comparision-table th.chorale {
@@ -971,10 +960,10 @@ img[data-src] {
 /**
  * Page specific
  */
-.index .hero {
+.index .hero--flat {
   color: #000;
-  background: #e5e5e5; }
-  .index .hero__promo {
+  background-color: #e5e5e5; }
+  .index .hero--flat__promo {
     color: #000; }
-  .index .hero .btn--border {
+  .index .hero--flat .btn--border {
     color: #000; }

@@ -170,10 +170,12 @@ type: basic
 </section>
 
 
-<section class="basic-section" id="comparision">
+<section class="basic-section" id="comparison">
   <div class="container container--narrow">
     <h2 class="h1 bold center"><b>Chorale kills the competition.<br>Don’t believe us? Look here!</b></h1>
-    <p class="bold center">Compare features between Chorale and other listening apps. On topics like “Listens to feedback”, you can click on the cross for more information. Oh, and one more thing, if we made a mistake, please point it out to us via the chat box!</p>
+    <p class="bold center">Compare features between Chorale and other apps. You can click on the cross or checkmark for more information, in case you feel we are wrong on some subject. And, if we made a mistake somewhere, please do not be shy and <a href="/contact">point it out to us</a>!</p>
+
+    <p class="center ingrained">Results last updated September 25, 2017.</p>
   </div>
   <div class="container">
     <div class="break"></div>
@@ -186,141 +188,169 @@ type: basic
           <img data-src="/logo.png" alt="Chorale">
         </th>
         <th>
-          <img data-src="/competitors/sc.png" alt="SoundCloud">
+          <a href="https://www.spotify.com">
+            <img data-src="/competitors/sp.svg" alt="Spotify">
+          </a>
         </th>
         <th>
-          <img data-src="/competitors/spotifoo.png" alt="Spotify">
+          <a href="https://music.google.com">
+            <img data-src="/competitors/gpm.png" style="transform: scale(1.15)" alt="Google Play Music">
+          </a>
         </th>
         <th>
-          <img data-src="/competitors/youtoo.png" alt="YouTube">
+          <a href="https://www.youtube.com">
+            <img data-src="/competitors/yt.svg" alt="YouTube">
+          </a>
         </th>
         <th>
-          <img data-src="/competitors/gpm.png" alt="Google Play">
+          <a href="https://soundcloud.com">
+            <img data-src="/competitors/sc.svg" style="transform: scale(1.4)" alt="SoundCloud">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.apple.com/apple-music">
+            <img data-src="/competitors/am.svg" alt="Apple Music">
+          </a>
         </th>
       </tr>
       <tr>
-        <td class="feature"><span class="bold">Bring your own<br>music with you</span></td>
-        <td class="chorale"> {{< partial "check.html" >}} </td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "check.html" >}}</td>
+        <td class="feature"><span class="bold">Upload own music</span></td>
+        <td class="chorale highlighted">{{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "check.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "check.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Highest available<br>streaming quality</span></td>
-        <td class="chorale highlighted"><strong>lossless WAV</strong><br>circa 1441 kbps</td>
-        <td><!-- SoundCl --> 128 kbps<br> MP3</td>
-        <td><!-- Spotify --> 320 kbps<br> OGG Vorbis</td>
-        <td><!-- YouTube --> 320 kbps<br> MP4/MP3</td>
-        <td><!-- Play Mu --> 320 kbps<br> MP3</td>
+        <td class="chorale highlighted"><strong>1441 kbps</strong><br>lossless, no mod</td>
+        <td><!-- Spotify     -->   <span class="ingrained">320 kbps<br> OGG</span></td>
+        <td><!-- Google Play -->   <span class="ingrained">320 kbps<br> MP3</span></td>
+        <td><!-- YouTube     -->   <span class="ingrained">320 kbps<br> MP4</span></td>
+        <td><!-- SoundCloud  -->   <span class="ingrained">128 kbps<br> MP3</span></td>
+        <td><!-- Apple Music -->   <span class="ingrained">256 kbps<br> AAC</span></td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Remote control</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "check.html" >}}</td>
-        <td><!-- YouTube --> Only for<br> Chromecast</td>
-        <td><!-- Play Mu --> Only for<br> Chromecast</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "check.html" >}}</td>
+        <td><!-- Google Play -->   Only on<br> Chromecast</td>
+        <td><!-- YouTube     -->   Supported TVs,<br> Chromecast</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Block songs or<br>artists you hate</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> Only in<br> Daily Mix</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   Only on<br> Daily Mix</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Listen to fan-made<br>mixes and remixes</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "check.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "check.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   US only</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "check.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "check.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Podcasts, live streams</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "check.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "check.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "check.html" >}}</td>
-        <td><!-- Play Mu --> US &amp; CA only</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "check.html" >}}</td>
+        <td><!-- Google Play -->   In US &amp; CA</td>
+        <td><!-- YouTube     -->   {{< partial "check.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "check.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Dedicated mix and<br>podcast UI</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> Only for<br>podcasts</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Change app look<br>to fit your needs</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Desktop apps</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "check.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "check.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "check.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">View previous<br>queue tracks</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "check.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "check.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "check.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "check.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "check.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "check.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Ergonomic mobile apps<br>for use with 1 hand</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "check.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Screen real-estate<br>preservant apps</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Listens to feedback</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> <a href="https://mastodon.xyz/@mistermantas/6982087">{{< partial "cross.html" >}}</a></td>
-        <td><!-- YouTube --> <a href="https://productforums.google.com/forum/#!topicsearchin/youtube/listen$20to$20feedback">
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   <a href="https://mastodon.xyz/@mistermantas/6982087">{{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   <a href="https://www.reddit.com/r/Android/comments/5cuwt4/introducing_the_new_google_play_music/">
           {{< partial "cross.html" >}}
         </a></td>
-        <td><!-- Play Mu --> <a href="https://www.reddit.com/r/Android/comments/5cuwt4/introducing_the_new_google_play_music/">
+        <td><!-- YouTube     -->   <a href="https://productforums.google.com/forum/#!topicsearchin/youtube/listen$20to$20feedback">
           {{< partial "cross.html" >}}
         </a></td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
       <tr>
-        <td class="feature"><span class="bold">Human support</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "check.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="feature"><span class="bold">Humane support</span></td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "check.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "check.html" >}}</td>
       </tr>
       <tr>
         <td class="feature"><span class="bold">Open source</span></td>
-        <td class="chorale"> {{< partial "check.html" >}}</td>
-        <td><!-- SoundCl --> {{< partial "cross.html" >}}</td>
-        <td><!-- Spotify --> {{< partial "cross.html" >}}</td>
-        <td><!-- YouTube --> {{< partial "cross.html" >}}</td>
-        <td><!-- Play Mu --> {{< partial "cross.html" >}}</td>
+        <td class="chorale">       {{< partial "check.html" >}}</td>
+        <td><!-- Spotify     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Google Play -->   {{< partial "cross.html" >}}</td>
+        <td><!-- YouTube     -->   {{< partial "cross.html" >}}</td>
+        <td><!-- SoundCloud  -->   {{< partial "cross.html" >}}</td>
+        <td><!-- Apple Music -->   {{< partial "cross.html" >}}</td>
       </tr>
     </table>
   </div>

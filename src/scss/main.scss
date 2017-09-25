@@ -443,7 +443,6 @@
   vertical-align: middle;
   width: 100vw;
   background-color: #292929;
-  background-size: cover;
 
   a { color: #fff; }
 
@@ -571,12 +570,15 @@
 
   // Headings
   th {
-    padding: 1rem;
-    padding-top: 1.5rem;
+    padding: 1rem 1.4rem;
 
     img {
-      height: 1.5rem;
+      height: 1.4rem;
       width: auto;
+    }
+
+    &.chorale {
+      padding-top: 1.5rem;
     }
   }
 
@@ -599,7 +601,7 @@
     border-color: $brand-main;
     border-left: 0.1rem solid $brand-main;
     border-right: 0.1rem solid $brand-main;
-    padding: 1rem 2.5rem;
+    padding: 0.25rem 1.25rem;
 
     svg path { fill: $brand-main; }
   }
@@ -667,9 +669,9 @@
  * Page specific
  */
 
-.index .hero {
+.index .hero--flat {
   color: #000;
-  background: #e5e5e5;
+  background-color: #e5e5e5;
 
   &__promo { color: #000; }
   .btn--border { color: #000; }
